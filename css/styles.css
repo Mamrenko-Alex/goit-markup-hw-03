@@ -41,6 +41,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .container .list {
   display: flex;
   gap: 24px;
@@ -264,7 +265,6 @@ button {
 .site-header .container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 15px;
 }
 
 .site-nav,
@@ -273,6 +273,12 @@ button {
   display: flex;
   gap: 40px;
 }
+
+.list.pages,
+.list.contacts {
+  padding: 24px 0;
+}
+
 /* ========== /HEADER ========== */
 
 /* ========== HERO ========== */
