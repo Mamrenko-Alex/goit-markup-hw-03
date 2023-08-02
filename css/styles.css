@@ -266,8 +266,8 @@ button {
 }
 
 .site-nav,
-.pages,
-.contacts {
+.list.pages,
+.list.contacts {
   display: flex;
   gap: 40px;
 }
@@ -326,8 +326,9 @@ button {
   align-items: center;
 }
 
-.list.filter {
+.filter {
   margin-bottom: 72px;
+  justify-content: center;
 }
 
 .list.projects {
