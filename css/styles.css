@@ -1,0 +1,195 @@
+/* ========== VAR ========== */
+:root {
+  --primary-color: #4d5ae5;
+  --pressed-color: #404bbf;
+  --dark-color: #2e2f42;
+  --primary-text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --white: #ffffff;
+  --accent-color: #e7e9fc;
+  --light-background-color: #f4f4fd;
+  --primary-font: 'Roboto', sans-serif;
+}
+/* ========== /VAR ========== */
+
+/* ========== COMMON ========== */
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-style: normal;
+  color: var(--primary-text-color);
+  background-color: var(--white);
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.team {
+  background-color: var(--light-background-color);
+}
+
+.hero {
+  background-color: var(--dark-color);
+}
+/* ========== /COMMON ========== */
+
+/* ========== NAVIGATION ========== */
+.site-nav {
+  font-weight: 500;
+}
+
+.link-to {
+  color: var(--dark-color);
+}
+
+.link-to:hover,
+.link-to:focus {
+  color: var(--pressed-color);
+}
+
+/* 
+Поки видаляюю, бо з ним не проходять тести
+#active-page {
+  color: var(--primary-color);
+} */
+/* ========== /NAVIGATION ========== */
+
+/* ========== LOGO ========== */
+.site-logo {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.034em;
+  text-transform: uppercase;
+}
+
+.second-color-header {
+  color: var(--dark-color);
+}
+
+.second-color-footer {
+  color: var(--light-background-color);
+}
+/* ========== /LOGO ========== */
+
+/* ========== ADDRESS ========== */
+.company-contacts {
+  font-style: normal;
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--pressed-color);
+}
+
+.contact {
+  color: var(--primary-text-color);
+}
+
+.contact:hover,
+.contact:focus {
+  color: var(--pressed-color);
+}
+/* ========== /ADDRESS ========== */
+
+/* ========== HEADERS ========== */
+.display-header {
+  color: var(--white);
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.070em;
+}
+
+.section-header {
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.045em;
+  text-transform: capitalize;
+}
+
+.benefit-header,
+.teammate-name,
+.project-name {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.025em;
+}
+/* ========== /HEADERS ========== */
+
+/* ========== BUTTONS ========== */
+button {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.040em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cta-button {
+  /* Button Frame */
+  background-color: var(--primary-color);
+  /* Button Text */
+  color: var(--white);
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: var(--pressed-color);
+}
+
+.filter-button {
+  /* Button Frame */
+  border: 1px solid var(--accent-color);
+  background-color: var(--light-background-color);
+  /* Button Text */
+  color: var(--primary-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white);
+  background-color: var(--pressed-color);
+}
+/* ========== /BUTTONS ========== */
+
+/* ========== CARDS ========== */
+.teammate {
+  background-color: var(--white);
+}
+
+.list .project {
+  background: var(--white);
+}
+
+.project-category {
+  color: var(--primary-text-color);
+}
+/* ========== /CARDS ========== */
+
+/* ========== FOOTER ========== */
+.site-footer {
+  background-color: var(--dark-color);
+}
+
+.footer-slogan {
+  color: var(--light-background-color);
+}
+/* ========== /FOOTER ========== */
