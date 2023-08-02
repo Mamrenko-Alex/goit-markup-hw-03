@@ -38,7 +38,6 @@ body {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .container .list {
@@ -267,8 +266,8 @@ button {
 }
 
 .site-nav,
-.site-nav .list,
-.company-contacts .list {
+.pages,
+.contacts {
   display: flex;
   gap: 40px;
 }
@@ -278,6 +277,7 @@ button {
 .hero .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
 }
 /* ========== /HERO ========== */
@@ -323,6 +323,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .list.filter {
