@@ -45,7 +45,8 @@ body {
   gap: 24px;
 }
 
-.visually-hidden {
+.visually-hidden,
+.section-header.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
