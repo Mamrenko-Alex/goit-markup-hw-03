@@ -33,11 +33,11 @@ body {
 }
 
 .container {
-  max-width: 1134px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 156px;
-  margin-right: 156px;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .container .list {
@@ -71,7 +71,6 @@ body {
 }
 
 .hero {
-  height: 600px;
   background-color: var(--dark-color);
 }
 /* ========== /COMMON ========== */
@@ -83,11 +82,13 @@ body {
 
 .link-to {
   color: var(--dark-color);
+  padding: 24px 0;
 }
 
 .link-to:hover,
 .link-to:focus {
   color: var(--pressed-color);
+  border: 1px solid transparent;
 }
 
 /* 
@@ -107,6 +108,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.034em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .second-color-header {
@@ -142,9 +144,10 @@ body {
 .display-header {
   color: var(--white);
   text-align: center;
+  max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.02em;
 }
 
 .section-header {
@@ -154,6 +157,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.045em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .benefit-header,
@@ -164,6 +168,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.025em;
+  margin-bottom: 8px;
 }
 /* ========== /HEADERS ========== */
 
@@ -183,6 +188,7 @@ button {
 
 .cta-button {
   /* Button Frame */
+  min-width: 169px;
   display: block;
   padding: 16px 32px;
   align-items: flex-start;
@@ -223,14 +229,18 @@ button {
 
 /* ========== CARDS ========== */
 .teammate {
+  width: calc((100% - 72px) / 4);
   background-color: var(--white);
-  text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .list .project {
-  border: 1px solid var(--cornflower, #e7e9fc);
-
   background: var(--white);
+  width: calc((100% - 48px) / 3);
+}
+
+.card-doing {
+  width: calc((100% - 48px) / 3);
 }
 
 .project-category {
@@ -239,11 +249,14 @@ button {
 /* ========== /CARDS ========== */
 
 /* ========== HEADER ========== */
+.site-header {
+  border-bottom: 1px solid var(--accent-color);
+}
+
 .site-header .container {
   display: flex;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .site-nav,
@@ -252,11 +265,6 @@ button {
   display: flex;
   gap: 40px;
 }
-
-.site-nav:first-child {
-  gap: 76px;
-}
-
 /* ========== /HEADER ========== */
 
 /* ========== HERO ========== */
@@ -264,21 +272,17 @@ button {
   display: flex;
   flex-direction: column;
   gap: 48px;
-}
-
-.container .display-header {
-  padding-top: 188px;
+  padding: 188px 0;
 }
 /* ========== /HERO ========== */
 
 /* ========== BENEFITS ========== */
-.card-benefit {
-  max-width: 264px;
+.benefits .container {
+  padding: 120px 0;
 }
 
-.benefits .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.card-benefit {
+  width: calc((100% - 72px) / 4);
 }
 /* ========== /BENEFITS ========== */
 
@@ -286,7 +290,6 @@ button {
 .our-doing .container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
   padding-bottom: 120px;
 }
 /* ========== /SERVICES ========== */
@@ -295,44 +298,37 @@ button {
 .team .container {
   display: flex;
   flex-direction: column;
-  gap: 72px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
-.teammate-name {
-  padding-top: 32px;
-}
-
-.teammate-position {
-  padding-bottom: 32px;
+.name-position {
+  padding: 32px 0;
+  text-align: center;
 }
 /* ========== /TEAM ========== */
 
 /* ========== PORTFOLIO ========== */
-.container .list {
+.portfolio .container {
   display: flex;
+  flex-direction: column;
+  padding-top: 96px;
+  padding-bottom: 120px;
+  justify-content: center;
 }
 
 .list.filter {
-  padding-top: 96px;
-  padding-bottom: 72px;
-  margin-left: 271px;
+  margin-bottom: 72px;
 }
 
 .list.projects {
   flex-wrap: wrap;
-  padding-bottom: 120px;
+  row-gap: 48px;
 }
 
-.project-name {
-  padding-top: 32px;
-  padding-left: 16px;
-}
-
-.project-category {
-  padding-bottom: 32px;
-  padding-left: 16px;
+.name-and-category {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 /* ========== /PORTFOLIO ========== */
@@ -348,9 +344,12 @@ button {
 }
 
 .site-footer .container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  align-items: flex-start;
   padding: 100px 0;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /* ========== /FOOTER ========== */
