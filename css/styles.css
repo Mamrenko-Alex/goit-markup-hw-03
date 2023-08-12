@@ -264,6 +264,7 @@ button {
 
 .site-header .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -274,7 +275,11 @@ button {
   gap: 40px;
 }
 
-.list.pages,
+.site-nav .link,
+.link-to {
+  display: block;
+}
+
 .list.contacts {
   padding: 24px 0;
 }
